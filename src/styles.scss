@@ -83,20 +83,19 @@ mat-expansion-panel {
   display: flex;
   position: fixed;
 }
-.sp-search{
+.sp-search {
   height: 64px;
 }
 .sp-search .mat-form-field-flex {
-height: 64px;
-line-height: 32px;
+  height: 64px;
+  line-height: 32px;
 }
 .sp-sidenav-buttons {
-text-align: center;
-padding: 1em;
-display: flex;
-flex-direction: column
+  text-align: left;
+  display: flex;
+  flex-direction: column;
 }
 .sp-sidenav-buttons button {
-  margin-bottom: 0.75em;
+  margin-top: 0.75em;
   text-align: left;
 }
