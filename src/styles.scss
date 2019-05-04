@@ -83,3 +83,10 @@ mat-expansion-panel {
   display: flex;
   position: fixed;
 }
+.sp-search{
+  height: 64px;
+}
+.sp-search .mat-form-field-flex {
+height: 64px;
+line-height: 32px;
+}
