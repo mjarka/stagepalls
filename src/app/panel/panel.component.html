@@ -1,0 +1,23 @@
+<mat-expansion-panel [ngClass]="{'blue_border':fakedata.lookingfor === 'Zespołu', 'green_border':fakedata.lookingfor === 'Muzyka' }">
+  <mat-expansion-panel-header>
+    <mat-panel-description>
+      Muzyk
+    </mat-panel-description>
+    <mat-panel-description>
+      Szuka {{fakedata.lookingfor}}
+    </mat-panel-description>
+    <mat-panel-description>
+      {{fakedata.city}}
+    </mat-panel-description>
+    <mat-panel-description>
+      <mat-icon>{{fakedata.icon}}</mat-icon>
+    </mat-panel-description>
+    <mat-panel-description>
+      {{fakedata.instrument}}
+    </mat-panel-description>
+  </mat-expansion-panel-header>
+  <div class="h_iframe">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo necessitatibus natus, maiores quos delectus numquam, sequi impedit exercitationem, ipsam nihil modi eveniet distinctio quas? Nam aliquid itaque enim quas at?</p>
+      <iframe width="100%" height="136" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/559142859&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+</div>
+</mat-expansion-panel>

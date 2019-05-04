@@ -1,0 +1,98 @@
+@import "~@angular/material/theming";
+
+$sppalette1: (
+  50: #efefef,
+  100: #ded7d7,
+  200: #98999d,
+  300: #6e7075,
+  400: #4f5158,
+  500: #30323a,
+  600: #2b2d34,
+  700: #24262c,
+  800: #1e1f25,
+  900: #131318,
+  A100: #5f77d9,
+  A200: #57b7a1,
+  A400: #0000f8,
+  A700: #0000df,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #ffffff,
+    400: #ffffff,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #ffffff,
+    A200: #ffffff,
+    A400: #ffffff,
+    A700: #ffffff
+  )
+);
+
+$sppalette2: (
+  50: #e5f4f3,
+  100: #bee4e1,
+  200: #93d3cd,
+  300: #67c1b8,
+  400: #47b3a9,
+  500: #26a69a,
+  600: #229e92,
+  700: #1c9588,
+  800: #178b7e,
+  900: #0d7b6c,
+  A100: #adfff3,
+  A200: #7affec,
+  A400: #47ffe4,
+  A700: #2dffe0,
+  contrast: (
+    50: #e9d0d0,
+    100: #000000,
+    200: #000000,
+    300: #c0b6b6,
+    400: #eeeeee,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #c9bebe,
+    A200: #dfd9d9,
+    A400: #000000,
+    A700: #000000
+  )
+);
+
+$sp-palette-primary: mat-palette($sppalette1);
+$sp-palette-accent: mat-palette($sppalette2);
+
+$stagepallsthemelight: mat-light-theme($sp-palette-primary, $sp-palette-accent);
+$stagepallsthemedark: mat-dark-theme($sp-palette-primary, $sp-palette-accent);
+
+@include angular-material-theme($stagepallsthemelight);
+.sp-light-theme {
+  @include angular-material-theme($stagepallsthemelight);
+}
+.sp-dark-theme {
+  @include angular-material-theme($stagepallsthemedark);
+ color: white;
+ background-color: mat-color($sppalette1, 400);;
+}
+
+::ng-deep .mat-focused .mat-form-field-label {
+  /*change color of label*/
+  color: green !important;
+}
+
+::ng-deep.mat-form-field-underline {
+  /*change color of underline*/
+  background-color: green !important;
+}
+
+::ng-deep.mat-form-field-ripple {
+  /*change color of underline when focused*/
+  background-color: green !important;
+}
