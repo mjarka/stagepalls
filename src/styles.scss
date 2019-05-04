@@ -90,3 +90,13 @@ mat-expansion-panel {
 height: 64px;
 line-height: 32px;
 }
+.sp-sidenav-buttons {
+text-align: center;
+padding: 1em;
+display: flex;
+flex-direction: column
+}
+.sp-sidenav-buttons button {
+  margin-bottom: 0.75em;
+  text-align: left;
+}

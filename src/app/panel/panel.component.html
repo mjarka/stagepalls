@@ -1,9 +1,9 @@
 <mat-expansion-panel [ngClass]="{'blue_border':fakedata.lookingfor === 'Zespołu', 'green_border':fakedata.lookingfor === 'Muzyka' }">
   <mat-expansion-panel-header>
-    <mat-panel-description>
+    <mat-panel-description fxHide.lt-md>
       Muzyk
     </mat-panel-description>
-    <mat-panel-description>
+    <mat-panel-description fxHide.lt-md>
       Szuka {{fakedata.lookingfor}}
     </mat-panel-description>
     <mat-panel-description>
