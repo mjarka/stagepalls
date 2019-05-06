@@ -1,12 +1,17 @@
 <app-topbar fxHide fxShow.lt-md></app-topbar>
+
 <mat-sidenav-container class="example-container">
+
   <mat-sidenav mode="side" opened fixedInViewport="true" fixedBottomGap="0" fixedTopGap="0" class="sp-dark-theme"
     fxHide.lt-md>
     <app-sidenav></app-sidenav>
   </mat-sidenav>
   <mat-sidenav-content>
+
     <div class="main-content" fxFlex>
+
       <app-logopanel></app-logopanel>
+      <app-filters></app-filters>
       <mat-accordion>
         <div *ngFor="let ads of adsdata">
           <app-panel [fakedata]="ads"></app-panel>
@@ -14,4 +19,5 @@
       </mat-accordion>
     </div>
   </mat-sidenav-content>
+
 </mat-sidenav-container>
