@@ -10,6 +10,7 @@ import { PanelComponent } from './panel/panel.component';
 import { TopbarComponent } from './topbar/topbar.component';
 import { LogopanelComponent } from './logopanel/logopanel.component';
 import { FiltersComponent } from './filters/filters.component';
+import { PaginatorComponent } from './paginator/paginator.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +18,8 @@ import { FiltersComponent } from './filters/filters.component';
     PanelComponent,
     TopbarComponent,
     LogopanelComponent,
-    FiltersComponent
+    FiltersComponent,
+    PaginatorComponent
   ],
   imports: [
     BrowserModule,
